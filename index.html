@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Birthday Greetings n Short Story💖</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #ff758f;
+      --secondary: #ffd6dc;
+      --accent: #a29bfe;
+      --bg: #fff5f7;
+      --text: #2d3436;
+    }
+
+    * { margin:0; padding:0; box-sizing:border-box; font-family:'Poppins',sans-serif; }
+
+    body {
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      min-height: 100vh;
+    }
+
+    /* INTRO SCREEN */
+    .intro {
+      position: fixed;
+      top:0; left:0;
+      width:100%; height:100%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      z-index: 10;
+      text-align:center;
+      color:white;
+    }
+
+    .intro h1 { font-size:2rem; margin-bottom:10px; }
+    .intro p { margin-bottom:20px; }
+
+    .intro button {
+      padding:12px 25px;
+      border:none;
+      border-radius:25px;
+      background:white;
+      color:var(--primary);
+      font-weight:bold;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .intro button:hover { transform:scale(1.05); }
+
+    .hidden-intro { display:none; }
+
+    .container { max-width: 800px; margin: auto; padding:20px; display:none; }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 25px;
+      text-align: center;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+      margin-bottom: 30px;
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 { color: var(--primary); }
+    h2 { color: var(--accent); margin-bottom:10px; }
+    p { margin:10px 0; color: var(--text); }
+
+    .slider img {
+      width:100%; height:300px; object-fit:cover;
+      border-radius:20px; display:none;
+    }
+    .slider img.active { display:block; }
+
+    .story-img {
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 15px;
+      object-fit: cover;
+      max-height: 250px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    button.main-btn {
+      margin-top: 15px;
+      padding: 12px 25px;
+      border:none;
+      border-radius:20px;
+      background:var(--primary);
+      color:white;
+      cursor:pointer;
+    }
+
+    .hidden { display:none; }
+
+    .timeline { text-align:left; margin-top: 20px; }
+
+    .timeline-item {
+      margin-bottom: 20px;
+      padding: 15px;
+      background: var(--bg);
+      border-radius: 15px;
+    }
+
+    .timeline-item h3 { color: var(--primary); margin-bottom: 5px; }
+
+    footer {
+      text-align:center;
+      color:white;
+      font-size:0.9rem;
+      margin-bottom:10px;
+      opacity:0.8;
+    }
+
+    @keyframes fadeIn {
+      from { opacity:0; transform:translateY(20px);} 
+      to { opacity:1; transform:translateY(0);} 
+    }
+  </style>
+</head>
+<body>
+
+<!-- INTRO -->
+<div class="intro" id="intro">
+  <h1>Ada sesuatu buat kamu sayangggg 💌</h1>
+  <p>Klik tombol di bawah dulu dongg</p>
+  <button onclick="openPage()">Buka 🎁</button>
+</div>
+
+<div class="container" id="mainContent">
+
+  <div class="card">
+    <h1>Happy 19th Birthday 🎉</h1>
+    <h2>Mutia Zahra 💖</h2>
+
+    <div class="slider">
+      <img src="foto1.jpg" class="active">
+      <img src="foto2.jpg">
+      <img src="foto3.jpg">
+    </div>
+
+    <p>Selamat ulang tahun yaa sayang ❤️</p>
+    <p>Sebelom scroll lebih jauhh, klik dulu tombol dibawah sayangg.</p>
+
+    <button class="main-btn" onclick="startSurprise()">Klik yang iniiiiii 🎁</button>
+    <p id="extra" class="hidden">Bacanya pelan pelan, Volume nya kencengin okeyyy 💕</p>
+  </div>
+
+  <div class="card">
+    <h2>Our Story of Photo Booth 💕</h2>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Awal Photo Booth</h3>
+        <img src="story1.jpg" class="story-img">
+        <p>Dimana kita pertama kali take photo booth bener bener canggung, kamu juga tau sendiri yaa itu first my photo booth with GF, eheheheh jadi aku sedikit kaku dan bingug gimana gaya nya WKWKWKWKWK</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Photo Booth Kedua</h3>
+        <img src="story2.jpg" class="story-img">
+        <p>Kita uda kaya mulai nemuin gaya yang pas buat kita photo booth hwhwhw, dan hasilnya ummm bole bole lah yaaa wkwkwk</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>The Last time Photo Booth with U</h3>
+        <img src="story3.jpg" class="story-img">
+        <p>Akhirnya kita uda ditahap ngga yang kaku banget buat ngegaya, dan bisa dibilang LUCU bangetttttt meskipun fotonya gabisa didownload satu satu, over all ini photo booth paling aku sukaa heheh, yaa selain karena itu juga ada hal lain yang bisa bikin photo booth ini lebih spesial, U KNO LAAA kiww kiww, uda dikenalin ke keluarga besar nii</p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Sekarang</h3>
+        <img src="story4.jpg" class="story-img">
+        <p>Sekarang kamu jadi orang pertama yang aku cari kalo aku uda mulai over work didunia yang ee ini hwhwhwh, Sayangg di ulang taun kali inii semoga apa yang kamu pengen bisa cepet cepet kecapai, dannnnn kamu juga bisa jadi pribadi yang lebih baik dari sebelumnya. i will always love you, today, tomorrow, and forever💖.</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer>© 2026 Dibuat dengan ❤️ sama aboo pacar kamu, buat Mutia Zahra</footer>
+
+<audio id="music" loop>
+  <source src="lagu.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  function openPage(){
+    document.getElementById('intro').style.display='none';
+    document.getElementById('mainContent').style.display='block';
+  }
+
+  let index = 0;
+  const slides = document.querySelectorAll('.slider img');
+
+  setInterval(()=>{
+    if(slides.length){
+      slides[index].classList.remove('active');
+      index = (index+1)%slides.length;
+      slides[index].classList.add('active');
+    }
+  },3000);
+
+  function startSurprise(){
+    document.getElementById('extra').classList.remove('hidden');
+    document.getElementById('music').play();
+  }
+</script>
+
+</body>
+</html>
